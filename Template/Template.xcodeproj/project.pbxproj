@@ -27,6 +27,7 @@
 		480E5646229BF2B40031BDF7 /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 480E5630229BF2B40031BDF7 /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		480E5653229BF3790031BDF7 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4822018322982413003319F0 /* Model.framework */; };
 		480E5654229BF37C0031BDF7 /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482201A822982422003319F0 /* System.framework */; };
+		480E5667229BFF0B0031BDF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 480E5666229BFF0B0031BDF7 /* Localizable.strings */; };
 		4822014522982175003319F0 /* TemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822014422982175003319F0 /* TemplateApp.swift */; };
 		4822014C22982175003319F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4822014B22982175003319F0 /* Assets.xcassets */; };
 		4822015A22982175003319F0 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822015922982175003319F0 /* TemplateTests.swift */; };
@@ -169,6 +170,7 @@
 		480E5638229BF2B40031BDF7 /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		480E563F229BF2B40031BDF7 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		480E5641229BF2B40031BDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		480E5666229BFF0B0031BDF7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4822014122982175003319F0 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4822014422982175003319F0 /* TemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateApp.swift; sourceTree = "<group>"; };
 		4822014B22982175003319F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -311,6 +313,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		480E5665229BFF030031BDF7 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				480E5666229BFF0B0031BDF7 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
 		4822013822982175003319F0 = {
 			isa = PBXGroup;
 			children = (
@@ -385,9 +395,9 @@
 		48220166229821B3003319F0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				480E5665229BFF030031BDF7 /* Localization */,
 				4822016A2298224B003319F0 /* Configurations */,
 				48220169229821CB003319F0 /* Assets */,
-				48220168229821C2003319F0 /* Localization */,
 				48220167229821BF003319F0 /* Other */,
 			);
 			path = Resources;
@@ -400,13 +410,6 @@
 				4822015022982175003319F0 /* Info.plist */,
 			);
 			path = Other;
-			sourceTree = "<group>";
-		};
-		48220168229821C2003319F0 /* Localization */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Localization;
 			sourceTree = "<group>";
 		};
 		48220169229821CB003319F0 /* Assets */ = {
@@ -837,6 +840,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4822016E2298225D003319F0 /* Default-release.xcconfig in Resources */,
+				480E5667229BFF0B0031BDF7 /* Localizable.strings in Resources */,
 				482201702298225D003319F0 /* Default-debug.xcconfig in Resources */,
 				4822016F2298225D003319F0 /* Default-staging.xcconfig in Resources */,
 				482201CF2298252D003319F0 /* LaunchScreen.storyboard in Resources */,
