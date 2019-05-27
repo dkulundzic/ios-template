@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		480E55EB229BEE100031BDF7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55EA229BEE100031BDF7 /* Router.swift */; };
+		480E55F0229BEE6F0031BDF7 /* UITableView-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55EC229BEE6F0031BDF7 /* UITableView-Template.swift */; };
+		480E55F1229BEE6F0031BDF7 /* UIView-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55ED229BEE6F0031BDF7 /* UIView-Template.swift */; };
+		480E55F2229BEE6F0031BDF7 /* UIColor-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55EE229BEE6F0031BDF7 /* UIColor-Template.swift */; };
+		480E55F3229BEE6F0031BDF7 /* UICollectionView-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55EF229BEE6F0031BDF7 /* UICollectionView-Template.swift */; };
+		480E55F6229BEEF20031BDF7 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55F5229BEEF20031BDF7 /* ReusableView.swift */; };
+		480E55F8229BEF2C0031BDF7 /* String-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55F7229BEF2B0031BDF7 /* String-Template.swift */; };
+		480E55FA229BEF430031BDF7 /* Collection-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55F9229BEF430031BDF7 /* Collection-Template.swift */; };
+		480E55FC229BEF550031BDF7 /* URL-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55FB229BEF550031BDF7 /* URL-Template.swift */; };
+		480E55FE229BEF860031BDF7 /* Bundle-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55FD229BEF860031BDF7 /* Bundle-Template.swift */; };
+		480E5600229BEFC20031BDF7 /* AttributedStringBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55FF229BEFC20031BDF7 /* AttributedStringBuilder.swift */; };
+		480E5603229BEFE20031BDF7 /* BroadcastObjectWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5601229BEFE20031BDF7 /* BroadcastObjectWrapper.swift */; };
+		480E5604229BEFE20031BDF7 /* Broadcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5602229BEFE20031BDF7 /* Broadcast.swift */; };
 		4822014522982175003319F0 /* TemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822014422982175003319F0 /* TemplateApp.swift */; };
 		4822014C22982175003319F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4822014B22982175003319F0 /* Assets.xcassets */; };
 		4822015A22982175003319F0 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822015922982175003319F0 /* TemplateTests.swift */; };
@@ -94,6 +107,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		480E55EA229BEE100031BDF7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		480E55EC229BEE6F0031BDF7 /* UITableView-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView-Template.swift"; sourceTree = "<group>"; };
+		480E55ED229BEE6F0031BDF7 /* UIView-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Template.swift"; sourceTree = "<group>"; };
+		480E55EE229BEE6F0031BDF7 /* UIColor-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Template.swift"; sourceTree = "<group>"; };
+		480E55EF229BEE6F0031BDF7 /* UICollectionView-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView-Template.swift"; sourceTree = "<group>"; };
+		480E55F5229BEEF20031BDF7 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		480E55F7229BEF2B0031BDF7 /* String-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Template.swift"; sourceTree = "<group>"; };
+		480E55F9229BEF430031BDF7 /* Collection-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection-Template.swift"; sourceTree = "<group>"; };
+		480E55FB229BEF550031BDF7 /* URL-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "URL-Template.swift"; sourceTree = "<group>"; };
+		480E55FD229BEF860031BDF7 /* Bundle-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle-Template.swift"; sourceTree = "<group>"; };
+		480E55FF229BEFC20031BDF7 /* AttributedStringBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttributedStringBuilder.swift; sourceTree = "<group>"; };
+		480E5601229BEFE20031BDF7 /* BroadcastObjectWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BroadcastObjectWrapper.swift; sourceTree = "<group>"; };
+		480E5602229BEFE20031BDF7 /* Broadcast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Broadcast.swift; sourceTree = "<group>"; };
 		4822014122982175003319F0 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4822014422982175003319F0 /* TemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateApp.swift; sourceTree = "<group>"; };
 		4822014B22982175003319F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -169,6 +195,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		480E55E9229BEE080031BDF7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				480E55EA229BEE100031BDF7 /* Router.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		480E55F4229BEEE80031BDF7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				480E55F5229BEEF20031BDF7 /* ReusableView.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		4822013822982175003319F0 = {
 			isa = PBXGroup;
 			children = (
@@ -228,6 +270,7 @@
 		48220165229821A9003319F0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				480E55E9229BEE080031BDF7 /* Protocols */,
 				482201D122982539003319F0 /* UI */,
 				482201D022982534003319F0 /* Extensions */,
 			);
@@ -327,6 +370,9 @@
 		482201C822982451003319F0 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				480E55FF229BEFC20031BDF7 /* AttributedStringBuilder.swift */,
+				480E5602229BEFE20031BDF7 /* Broadcast.swift */,
+				480E5601229BEFE20031BDF7 /* BroadcastObjectWrapper.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -367,6 +413,7 @@
 		482201D122982539003319F0 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				480E55F4229BEEE80031BDF7 /* Protocols */,
 				482201D522982550003319F0 /* View controllers */,
 				482201D42298254C003319F0 /* Views */,
 			);
@@ -376,6 +423,10 @@
 		482201D222982541003319F0 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				480E55F7229BEF2B0031BDF7 /* String-Template.swift */,
+				480E55F9229BEF430031BDF7 /* Collection-Template.swift */,
+				480E55FB229BEF550031BDF7 /* URL-Template.swift */,
+				480E55FD229BEF860031BDF7 /* Bundle-Template.swift */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
@@ -383,6 +434,10 @@
 		482201D322982546003319F0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				480E55EF229BEE6F0031BDF7 /* UICollectionView-Template.swift */,
+				480E55EC229BEE6F0031BDF7 /* UITableView-Template.swift */,
+				480E55ED229BEE6F0031BDF7 /* UIView-Template.swift */,
+				480E55EE229BEE6F0031BDF7 /* UIColor-Template.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -569,6 +624,7 @@
 					};
 					482201A722982422003319F0 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					482201AF22982422003319F0 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -654,6 +710,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480E55F3229BEE6F0031BDF7 /* UICollectionView-Template.swift in Sources */,
+				480E55FC229BEF550031BDF7 /* URL-Template.swift in Sources */,
+				480E55FA229BEF430031BDF7 /* Collection-Template.swift in Sources */,
+				480E55F2229BEE6F0031BDF7 /* UIColor-Template.swift in Sources */,
+				480E55EB229BEE100031BDF7 /* Router.swift in Sources */,
+				480E55F0229BEE6F0031BDF7 /* UITableView-Template.swift in Sources */,
+				480E55F8229BEF2C0031BDF7 /* String-Template.swift in Sources */,
+				480E55FE229BEF860031BDF7 /* Bundle-Template.swift in Sources */,
+				480E55F1229BEE6F0031BDF7 /* UIView-Template.swift in Sources */,
+				480E55F6229BEEF20031BDF7 /* ReusableView.swift in Sources */,
 				4822014522982175003319F0 /* TemplateApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,6 +751,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480E5604229BEFE20031BDF7 /* Broadcast.swift in Sources */,
+				480E5603229BEFE20031BDF7 /* BroadcastObjectWrapper.swift in Sources */,
+				480E5600229BEFC20031BDF7 /* AttributedStringBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -802,6 +871,7 @@
 		4822015F22982175003319F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Resources/Other/Info.plist";
@@ -895,6 +965,7 @@
 		48220172229822C2003319F0 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Resources/Other/Info.plist";
@@ -988,6 +1059,7 @@
 		4822017B229822E7003319F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "$(SRCROOT)/Template/Resources/Other/Info.plist";
@@ -1164,6 +1236,7 @@
 		482201C022982422003319F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1181,6 +1254,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.bundle.System;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1191,6 +1265,7 @@
 		482201C122982422003319F0 /* Staging */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1218,6 +1293,7 @@
 		482201C222982422003319F0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
