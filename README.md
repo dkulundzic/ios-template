@@ -9,7 +9,7 @@ To rename the template project, run the "rename.swift" script in the following w
 ./rename.swift Template NEW_PROJECT_NAME
 ```
 
-After the script successfully renames the project, you will need to rename the root project folder from "Template" to "NEW_PROJECT_NAME". Should be good-to-go after this completes.
+After the script successfully renames the project, you will need to rename the root project folder from **Template** to **NEW_PROJECT_NAME** (or something else). Should be good-to-go after this completes.
 
 # Project structure
 
