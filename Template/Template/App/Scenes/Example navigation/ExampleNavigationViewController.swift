@@ -1,5 +1,5 @@
 //
-//  ExampleViewController.swift
+//  ExampleNavigationViewController.swift
 //  Template
 //
 //  Created Domagoj Kulundzic on 27/05/2019.
@@ -8,17 +8,15 @@
 
 import UIKit
 
-protocol ExampleDisplayLogic: class {
-  func displayTodos()
-}
+protocol ExampleNavigationDisplayLogic: class { }
 
-class ExampleViewController: UIViewController {
-  var presenter: ExampleViewPresentingLogic?
-  private let contentView = ExampleContentView.autolayoutView()
+class ExampleNavigationViewController: UIViewController {
+  var presenter: ExampleNavigationViewPresentingLogic?
+  private lazy var contentView = ExampleNavigationContentView.autolayoutView()
   
   init() {
     super.init(nibName: nil, bundle: nil)
-    title = "Example"
+    title = "Example navigation"
   }
   
   required init?(coder aDecoder: NSCoder) {
@@ -31,24 +29,15 @@ class ExampleViewController: UIViewController {
     presenter?.viewLoaded()
   }
   
-  override func viewDidAppear(_ animated: Bool) {
-    super.viewDidAppear(animated)
-    presenter?.viewAppeared()
-  }
-  
   deinit {
     print(#function + ": \(type(of: self))")
   }
 }
 
-// MARK: - ExampleDisplayLogic
-extension ExampleViewController: ExampleDisplayLogic {
-  func displayTodos() {
-    print(#function)
-  }
-}
+// MARK: - ExampleNavigationDisplayLogic
+extension ExampleNavigationViewController: ExampleNavigationDisplayLogic { }
 
-private extension ExampleViewController {
+private extension ExampleNavigationViewController {
   func setupView() {
     setupContentView()
   }

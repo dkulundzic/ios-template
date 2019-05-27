@@ -44,20 +44,6 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
-		<dict>
-			<key>Identifier</key>
-			<string>InputOutput</string>
-			<key>Name</key>
-			<string>Divide Interactor protocol (Input &amp; Output)</string>
-			<key>Description</key>
-			<string>Divide Interactor protocol (Input &amp; Output)</string>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Default</key>
-			<string>false</string>
-			<key>NotPersisted</key>
-			<true/>
-		</dict>
 	</array>
 </dict>
 </plist>

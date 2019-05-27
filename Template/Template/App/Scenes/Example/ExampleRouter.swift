@@ -9,11 +9,12 @@
 import UIKit
 
 protocol ExampleRoutingLogic: class {
+  func navigateToExampleNavigation()
   func unwindBack()
 }
 
 protocol ExampleRouterDelegate: class {
-  func ExampleRouterRequestedUnwind()
+  func exampleRouterRequestedUnwind()
 }
 
 class ExampleRouter: Router {
@@ -29,13 +30,27 @@ class ExampleRouter: Router {
     let presenter = ExamplePresenter(interface: view, interactor: interactor, router: router)
     view.presenter = presenter
     interactor.presenter = presenter
-    return view
+    return UINavigationController(rootViewController: view)
   }
 }
 
 // MARK: - ExampleRoutingLogic
 extension ExampleRouter: ExampleRoutingLogic {
+  func navigateToExampleNavigation() {
+    print(#function)
+    let exampleNavigationScene = ExampleNavigationRouter.createModule(delegate: self)
+    viewController?.navigationController?.pushViewController(exampleNavigationScene, animated: true)
+  }
+  
   func unwindBack() {
-    delegate?.ExampleRouterRequestedUnwind()
+    print(#function)
+    delegate?.exampleRouterRequestedUnwind()
+  }
+}
+
+extension ExampleRouter: ExampleNavigationRouterDelegate {
+  func exampleNavigationRouterUnwindBack() {
+    print(#function)
+    viewController?.navigationController?.popViewController(animated: true)
   }
 }

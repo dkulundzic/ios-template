@@ -1,14 +1,14 @@
 //
-//  ExampleContentView.swift
+//  ExampleNavigationContentView.swift
 //  Template
 //
-//  Created by Domagoj Kulundzic on 27/05/2019.
+//  Created Domagoj Kulundzic on 27/05/2019.
 //  Copyright © 2019 Martian & Machine. All rights reserved.
 //
 
 import UIKit
 
-class ExampleContentView: UIView {
+class ExampleNavigationContentView: UIView {
   override init(frame: CGRect) {
     super.init(frame: frame)
     setupViews()
@@ -20,8 +20,8 @@ class ExampleContentView: UIView {
 }
 
 // MARK: - Private Methods
-private extension ExampleContentView {
+private extension ExampleNavigationContentView {
   func setupViews() {
-    backgroundColor = .red
+    backgroundColor = .green
   }
 }

@@ -5,12 +5,14 @@
 //  Created ___FULLUSERNAME___ on ___DATE___.
 //  Copyright © ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
 //
-//  Template inspired by Juanpe Catalán @JuanpeCMiOS
-//
 
-import UIKit
+import Foundation
 
-class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___PresentingLogic {
+protocol ___VARIABLE_productName:identifier___ViewPresentingLogic: class { }
+
+protocol ___VARIABLE_productName:identifier___BusinessPresentingLogic: class { }
+
+class ___VARIABLE_productName:identifier___Presenter {
   var interactor: ___VARIABLE_productName:identifier___BusinessLogic?
   weak private var view: ___VARIABLE_productName:identifier___DisplayLogic?
   private let router: ___VARIABLE_productName:identifier___RoutingLogic
@@ -21,3 +23,9 @@ class ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:id
     self.router = router
   }
 }
+
+// MARK: - ___VARIABLE_productName:identifier___ViewPresentingLogic
+extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___ViewPresentingLogic { }
+
+// MARK: - ___VARIABLE_productName:identifier___BusinessPresentingLogic
+extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___BusinessPresentingLogic { }

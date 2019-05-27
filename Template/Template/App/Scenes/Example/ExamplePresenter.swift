@@ -10,6 +10,7 @@ import Foundation
 
 protocol ExampleViewPresentingLogic: class {
   func viewLoaded()
+  func viewAppeared()
 }
 
 protocol ExampleBusinessPresentingLogic: class {
@@ -33,6 +34,13 @@ extension ExamplePresenter: ExampleViewPresentingLogic {
   func viewLoaded() {
     print(#function)
     interactor?.loadTodos()
+  }
+  
+  func viewAppeared() {
+    print(#function)
+    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+      self.router.navigateToExampleNavigation()
+    }
   }
 }
 

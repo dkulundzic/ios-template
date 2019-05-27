@@ -34,6 +34,11 @@
 		480E568C229C04BD0031BDF7 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5686229C04BD0031BDF7 /* ExampleViewController.swift */; };
 		480E568E229C04BD0031BDF7 /* ExampleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5688229C04BD0031BDF7 /* ExampleInteractor.swift */; };
 		480E5692229C05F10031BDF7 /* ExampleTodosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5691229C05F10031BDF7 /* ExampleTodosWorker.swift */; };
+		480E56BB229C14970031BDF7 /* ExampleNavigationContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E56B6229C14970031BDF7 /* ExampleNavigationContentView.swift */; };
+		480E56BC229C14970031BDF7 /* ExampleNavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E56B7229C14970031BDF7 /* ExampleNavigationPresenter.swift */; };
+		480E56BD229C14970031BDF7 /* ExampleNavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E56B8229C14970031BDF7 /* ExampleNavigationRouter.swift */; };
+		480E56BE229C14970031BDF7 /* ExampleNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E56B9229C14970031BDF7 /* ExampleNavigationViewController.swift */; };
+		480E56BF229C14970031BDF7 /* ExampleNavigationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E56BA229C14970031BDF7 /* ExampleNavigationInteractor.swift */; };
 		4822014522982175003319F0 /* TemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822014422982175003319F0 /* TemplateApp.swift */; };
 		4822014C22982175003319F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4822014B22982175003319F0 /* Assets.xcassets */; };
 		4822015A22982175003319F0 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822015922982175003319F0 /* TemplateTests.swift */; };
@@ -183,6 +188,11 @@
 		480E5686229C04BD0031BDF7 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
 		480E5688229C04BD0031BDF7 /* ExampleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInteractor.swift; sourceTree = "<group>"; };
 		480E5691229C05F10031BDF7 /* ExampleTodosWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTodosWorker.swift; sourceTree = "<group>"; };
+		480E56B6229C14970031BDF7 /* ExampleNavigationContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNavigationContentView.swift; sourceTree = "<group>"; };
+		480E56B7229C14970031BDF7 /* ExampleNavigationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNavigationPresenter.swift; sourceTree = "<group>"; };
+		480E56B8229C14970031BDF7 /* ExampleNavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNavigationRouter.swift; sourceTree = "<group>"; };
+		480E56B9229C14970031BDF7 /* ExampleNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNavigationViewController.swift; sourceTree = "<group>"; };
+		480E56BA229C14970031BDF7 /* ExampleNavigationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNavigationInteractor.swift; sourceTree = "<group>"; };
 		4822014122982175003319F0 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4822014422982175003319F0 /* TemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateApp.swift; sourceTree = "<group>"; };
 		4822014B22982175003319F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -360,6 +370,26 @@
 				480E5691229C05F10031BDF7 /* ExampleTodosWorker.swift */,
 			);
 			path = Workers;
+			sourceTree = "<group>";
+		};
+		480E5693229C13820031BDF7 /* Example navigation */ = {
+			isa = PBXGroup;
+			children = (
+				480E56C0229C149D0031BDF7 /* Views */,
+				480E56B8229C14970031BDF7 /* ExampleNavigationRouter.swift */,
+				480E56B7229C14970031BDF7 /* ExampleNavigationPresenter.swift */,
+				480E56BA229C14970031BDF7 /* ExampleNavigationInteractor.swift */,
+				480E56B9229C14970031BDF7 /* ExampleNavigationViewController.swift */,
+			);
+			path = "Example navigation";
+			sourceTree = "<group>";
+		};
+		480E56C0229C149D0031BDF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				480E56B6229C14970031BDF7 /* ExampleNavigationContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		4822013822982175003319F0 = {
@@ -609,6 +639,7 @@
 			isa = PBXGroup;
 			children = (
 				480E5668229BFF370031BDF7 /* Example */,
+				480E5693229C13820031BDF7 /* Example navigation */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -947,6 +978,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				480E56BE229C14970031BDF7 /* ExampleNavigationViewController.swift in Sources */,
 				480E55F3229BEE6F0031BDF7 /* UICollectionView-Template.swift in Sources */,
 				480E55FC229BEF550031BDF7 /* URL-Template.swift in Sources */,
 				480E55FA229BEF430031BDF7 /* Collection-Template.swift in Sources */,
@@ -956,12 +988,16 @@
 				480E55EB229BEE100031BDF7 /* Router.swift in Sources */,
 				480E5692229C05F10031BDF7 /* ExampleTodosWorker.swift in Sources */,
 				480E55F0229BEE6F0031BDF7 /* UITableView-Template.swift in Sources */,
+				480E56BD229C14970031BDF7 /* ExampleNavigationRouter.swift in Sources */,
 				480E55F8229BEF2C0031BDF7 /* String-Template.swift in Sources */,
 				480E55FE229BEF860031BDF7 /* Bundle-Template.swift in Sources */,
+				480E56BC229C14970031BDF7 /* ExampleNavigationPresenter.swift in Sources */,
 				480E568B229C04BD0031BDF7 /* ExampleRouter.swift in Sources */,
 				480E568A229C04BD0031BDF7 /* ExamplePresenter.swift in Sources */,
+				480E56BB229C14970031BDF7 /* ExampleNavigationContentView.swift in Sources */,
 				480E55F1229BEE6F0031BDF7 /* UIView-Template.swift in Sources */,
 				480E55F6229BEEF20031BDF7 /* ReusableView.swift in Sources */,
+				480E56BF229C14970031BDF7 /* ExampleNavigationInteractor.swift in Sources */,
 				4822014522982175003319F0 /* TemplateApp.swift in Sources */,
 				480E568E229C04BD0031BDF7 /* ExampleInteractor.swift in Sources */,
 			);
