@@ -28,6 +28,12 @@
 		480E5653229BF3790031BDF7 /* Model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4822018322982413003319F0 /* Model.framework */; };
 		480E5654229BF37C0031BDF7 /* System.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 482201A822982422003319F0 /* System.framework */; };
 		480E5667229BFF0B0031BDF7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 480E5666229BFF0B0031BDF7 /* Localizable.strings */; };
+		480E5689229C04BD0031BDF7 /* ExampleContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5683229C04BD0031BDF7 /* ExampleContentView.swift */; };
+		480E568A229C04BD0031BDF7 /* ExamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5684229C04BD0031BDF7 /* ExamplePresenter.swift */; };
+		480E568B229C04BD0031BDF7 /* ExampleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5685229C04BD0031BDF7 /* ExampleRouter.swift */; };
+		480E568C229C04BD0031BDF7 /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5686229C04BD0031BDF7 /* ExampleViewController.swift */; };
+		480E568E229C04BD0031BDF7 /* ExampleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5688229C04BD0031BDF7 /* ExampleInteractor.swift */; };
+		480E5692229C05F10031BDF7 /* ExampleTodosWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E5691229C05F10031BDF7 /* ExampleTodosWorker.swift */; };
 		4822014522982175003319F0 /* TemplateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822014422982175003319F0 /* TemplateApp.swift */; };
 		4822014C22982175003319F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4822014B22982175003319F0 /* Assets.xcassets */; };
 		4822015A22982175003319F0 /* TemplateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4822015922982175003319F0 /* TemplateTests.swift */; };
@@ -171,6 +177,12 @@
 		480E563F229BF2B40031BDF7 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		480E5641229BF2B40031BDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		480E5666229BFF0B0031BDF7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		480E5683229C04BD0031BDF7 /* ExampleContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleContentView.swift; sourceTree = "<group>"; };
+		480E5684229C04BD0031BDF7 /* ExamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExamplePresenter.swift; sourceTree = "<group>"; };
+		480E5685229C04BD0031BDF7 /* ExampleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleRouter.swift; sourceTree = "<group>"; };
+		480E5686229C04BD0031BDF7 /* ExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		480E5688229C04BD0031BDF7 /* ExampleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleInteractor.swift; sourceTree = "<group>"; };
+		480E5691229C05F10031BDF7 /* ExampleTodosWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTodosWorker.swift; sourceTree = "<group>"; };
 		4822014122982175003319F0 /* Template.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Template.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4822014422982175003319F0 /* TemplateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateApp.swift; sourceTree = "<group>"; };
 		4822014B22982175003319F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -319,6 +331,35 @@
 				480E5666229BFF0B0031BDF7 /* Localizable.strings */,
 			);
 			path = Localization;
+			sourceTree = "<group>";
+		};
+		480E5668229BFF370031BDF7 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				480E5690229C05E80031BDF7 /* Workers */,
+				480E568F229C05D70031BDF7 /* Views */,
+				480E5685229C04BD0031BDF7 /* ExampleRouter.swift */,
+				480E5688229C04BD0031BDF7 /* ExampleInteractor.swift */,
+				480E5684229C04BD0031BDF7 /* ExamplePresenter.swift */,
+				480E5686229C04BD0031BDF7 /* ExampleViewController.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		480E568F229C05D70031BDF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				480E5683229C04BD0031BDF7 /* ExampleContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		480E5690229C05E80031BDF7 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+				480E5691229C05F10031BDF7 /* ExampleTodosWorker.swift */,
+			);
+			path = Workers;
 			sourceTree = "<group>";
 		};
 		4822013822982175003319F0 = {
@@ -567,6 +608,7 @@
 		482201D622982554003319F0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				480E5668229BFF370031BDF7 /* Example */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -908,14 +950,20 @@
 				480E55F3229BEE6F0031BDF7 /* UICollectionView-Template.swift in Sources */,
 				480E55FC229BEF550031BDF7 /* URL-Template.swift in Sources */,
 				480E55FA229BEF430031BDF7 /* Collection-Template.swift in Sources */,
+				480E5689229C04BD0031BDF7 /* ExampleContentView.swift in Sources */,
 				480E55F2229BEE6F0031BDF7 /* UIColor-Template.swift in Sources */,
+				480E568C229C04BD0031BDF7 /* ExampleViewController.swift in Sources */,
 				480E55EB229BEE100031BDF7 /* Router.swift in Sources */,
+				480E5692229C05F10031BDF7 /* ExampleTodosWorker.swift in Sources */,
 				480E55F0229BEE6F0031BDF7 /* UITableView-Template.swift in Sources */,
 				480E55F8229BEF2C0031BDF7 /* String-Template.swift in Sources */,
 				480E55FE229BEF860031BDF7 /* Bundle-Template.swift in Sources */,
+				480E568B229C04BD0031BDF7 /* ExampleRouter.swift in Sources */,
+				480E568A229C04BD0031BDF7 /* ExamplePresenter.swift in Sources */,
 				480E55F1229BEE6F0031BDF7 /* UIView-Template.swift in Sources */,
 				480E55F6229BEEF20031BDF7 /* ReusableView.swift in Sources */,
 				4822014522982175003319F0 /* TemplateApp.swift in Sources */,
+				480E568E229C04BD0031BDF7 /* ExampleInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
