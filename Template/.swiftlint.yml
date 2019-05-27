@@ -1,0 +1,60 @@
+# All rules are available at https://github.com/realm/SwiftLint/blob/master/Rules.md
+
+disabled_rules:
+  - trailing_whitespace # Xcode adds whitespaces for each new line
+  - todo # we like todos
+  - nesting
+
+opt_in_rules:
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - overridden_super_call
+  - switch_case_on_newline
+  - yoda_condition
+  - force_unwrapping
+  - implicitly_unwrapped_optional
+
+excluded:
+  - Pods
+  - File templates
+
+large_tuple:
+  - 5 # warning
+  - 8 # error
+
+line_length:
+  - 250 # warning
+  - 300 # error
+
+function_body_length:
+  - 100 # warning
+  - 1000 # error
+
+function_parameter_count:
+  - 10 # warning
+  - 20 # error
+
+type_body_length:
+  - 500 # warning
+  - 600 # error
+
+file_length:
+  - 500 # warning
+  - 700 # error
+
+type_name:
+  max_length:
+    - 50 # error
+  excluded:
+    - T
+    - U
+    - S
+    - UI
+
+identifier_name:
+  min_length:
+    - 2 # error
+  max_length:
+    - 80 # error

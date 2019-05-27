@@ -10,7 +10,11 @@ import XCTest
 @testable import System
 
 class SystemTests: XCTestCase {
-  override func setUp() { }
+  override func setUp() {
+    super.setUp()
+  }
   
-  override func tearDown() { }
+  override func tearDown() {
+    super.tearDown()
+  }
 }

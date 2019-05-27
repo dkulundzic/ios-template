@@ -29,4 +29,3 @@ class TemplateApp: UIResponder, UIApplicationDelegate {
   
   func applicationWillTerminate(_ application: UIApplication) { }
 }
-

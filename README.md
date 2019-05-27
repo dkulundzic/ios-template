@@ -23,3 +23,6 @@ To use the templates, you copy the .xctemplate directory to `~/Library/Developer
 
 # Example architecture
 The template contains an example scene called "Home", created using the flavour of VIPER, as defined in the VIPER templates.
+
+# SwiftLint
+SwiftLint needs to be installed on the system beforehand. Please follow installation instructions on https://github.com/realm/SwiftLint (brew installation preferable).
