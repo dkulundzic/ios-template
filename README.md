@@ -14,7 +14,7 @@ After the script successfully renames the project, you will need to rename the r
 # Project structure
 
 # Dependency management
-Feel free to choose the dependency management system - CocoaPods or Carthage. 
+Feel free to choose the dependency management system - CocoaPods or Carthage or Swift Package Manager (coming soon, woo!)
 
 # Architecture
 The template project contains multiple Xcode file templates, tailored for multiple architectural approaches. There are templates for the VIP architecture and the VIPER architecture. 
