@@ -22,7 +22,7 @@ The template project contains multiple Xcode file templates, tailored for multip
 To use the templates, you copy the .xctemplate directory to `~/Library/Developer/Xcode/Templates/` and restart Xcode. Once you open up Xcode again, the templates should be ready for use once the "New file" dialog has been opened.
 
 **Note:**
-If you have the **"File\ Templates"** folder, you should remove it and create a dedicated folder for your templates.
+If you have the `~/Library/Developer/Xcode/Templates/File Templates` folder, you should remove it and create a dedicated folder for your templates.
 
 # Example architecture
 The template contains two example scenes and navigation management between them, created using the flavour of VIPER, as defined in the VIPER templates.
