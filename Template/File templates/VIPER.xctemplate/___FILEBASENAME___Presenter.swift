@@ -10,8 +10,6 @@ import Foundation
 
 protocol ___VARIABLE_productName:identifier___ViewPresentingLogic: class { }
 
-protocol ___VARIABLE_productName:identifier___BusinessPresentingLogic: class { }
-
 class ___VARIABLE_productName:identifier___Presenter {
   var interactor: ___VARIABLE_productName:identifier___BusinessLogic?
   weak private var view: ___VARIABLE_productName:identifier___DisplayLogic?
@@ -26,6 +24,3 @@ class ___VARIABLE_productName:identifier___Presenter {
 
 // MARK: - ___VARIABLE_productName:identifier___ViewPresentingLogic
 extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___ViewPresentingLogic { }
-
-// MARK: - ___VARIABLE_productName:identifier___BusinessPresentingLogic
-extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___BusinessPresentingLogic { }

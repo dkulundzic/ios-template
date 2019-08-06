@@ -24,7 +24,6 @@ class ___VARIABLE_productName:identifier___Router: Router {
     router.viewController = view
     let presenter = ___VARIABLE_productName:identifier___Presenter(interface: view, interactor: interactor, router: router)
     view.presenter = presenter
-    interactor.presenter = presenter
     return view
   }
 }

@@ -10,9 +10,7 @@ import Foundation
 
 protocol ___VARIABLE_productName:identifier___BusinessLogic: class { }
 
-class ___VARIABLE_productName:identifier___Interactor {
-  weak var presenter: ___VARIABLE_productName:identifier___BusinessPresentingLogic?
-}
+class ___VARIABLE_productName:identifier___Interactor { }
 
 // MARK: - ___VARIABLE_productName:identifier___BusinessLogic
 extension ___VARIABLE_productName:identifier___Interactor: ___VARIABLE_productName:identifier___BusinessLogic { }
