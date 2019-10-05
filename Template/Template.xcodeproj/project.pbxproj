@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		480E55EB229BEE100031BDF7 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55EA229BEE100031BDF7 /* Router.swift */; };
 		480E55F0229BEE6F0031BDF7 /* UITableView-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55EC229BEE6F0031BDF7 /* UITableView-Template.swift */; };
 		480E55F1229BEE6F0031BDF7 /* UIView-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55ED229BEE6F0031BDF7 /* UIView-Template.swift */; };
 		480E55F2229BEE6F0031BDF7 /* UIColor-Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55EE229BEE6F0031BDF7 /* UIColor-Template.swift */; };
@@ -162,7 +161,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		480E55EA229BEE100031BDF7 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		480E55EC229BEE6F0031BDF7 /* UITableView-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView-Template.swift"; sourceTree = "<group>"; };
 		480E55ED229BEE6F0031BDF7 /* UIView-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView-Template.swift"; sourceTree = "<group>"; };
 		480E55EE229BEE6F0031BDF7 /* UIColor-Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Template.swift"; sourceTree = "<group>"; };
@@ -286,14 +284,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		480E55E9229BEE080031BDF7 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				480E55EA229BEE100031BDF7 /* Router.swift */,
-			);
-			path = Protocols;
-			sourceTree = "<group>";
-		};
 		480E55F4229BEEE80031BDF7 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -456,7 +446,6 @@
 		48220165229821A9003319F0 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				480E55E9229BEE080031BDF7 /* Protocols */,
 				482201D122982539003319F0 /* UI */,
 				482201D022982534003319F0 /* Extensions */,
 			);
@@ -1007,7 +996,6 @@
 				480E5689229C04BD0031BDF7 /* ExampleContentView.swift in Sources */,
 				480E55F2229BEE6F0031BDF7 /* UIColor-Template.swift in Sources */,
 				480E568C229C04BD0031BDF7 /* ExampleViewController.swift in Sources */,
-				480E55EB229BEE100031BDF7 /* Router.swift in Sources */,
 				480E5692229C05F10031BDF7 /* ExampleTodosWorker.swift in Sources */,
 				480E55F0229BEE6F0031BDF7 /* UITableView-Template.swift in Sources */,
 				480E56BD229C14970031BDF7 /* ExampleNavigationRouter.swift in Sources */,

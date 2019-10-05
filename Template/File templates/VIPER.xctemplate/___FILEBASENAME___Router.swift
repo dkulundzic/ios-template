@@ -12,11 +12,11 @@ protocol ___VARIABLE_productName:identifier___RoutingLogic: class { }
 
 protocol ___VARIABLE_productName:identifier___RouterDelegate: class { }
 
-class ___VARIABLE_productName:identifier___Router: Router {
-  weak var viewController: UIViewController?
+class ___VARIABLE_productName:identifier___Router {
+  weak var viewController: ___VARIABLE_productName:identifier___ViewController?
   weak var delegate: ___VARIABLE_productName:identifier___RouterDelegate?
   
-  static func createModule(delegate: ___VARIABLE_productName:identifier___RouterDelegate?) -> UIViewController {
+  static func createModule(delegate: ___VARIABLE_productName:identifier___RouterDelegate?) -> ___VARIABLE_productName:identifier___ViewController {
     let view = ___VARIABLE_productName:identifier___ViewController(nibName: nil, bundle: nil)
     let interactor = ___VARIABLE_productName:identifier___Interactor()
     let router = ___VARIABLE_productName:identifier___Router()
