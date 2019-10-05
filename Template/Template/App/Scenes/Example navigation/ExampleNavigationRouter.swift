@@ -16,11 +16,11 @@ protocol ExampleNavigationRouterDelegate: class {
   func exampleNavigationRouterUnwindBack()
 }
 
-class ExampleNavigationRouter: Router {
-  weak var viewController: UIViewController?
+class ExampleNavigationRouter {
+  weak var viewController: ExampleNavigationViewController?
   weak var delegate: ExampleNavigationRouterDelegate?
   
-  static func createModule(delegate: ExampleNavigationRouterDelegate?) -> UIViewController {
+  static func createModule(delegate: ExampleNavigationRouterDelegate?) -> ExampleNavigationViewController {
     let view = ExampleNavigationViewController()
     let interactor = ExampleNavigationInteractor()
     let router = ExampleNavigationRouter()

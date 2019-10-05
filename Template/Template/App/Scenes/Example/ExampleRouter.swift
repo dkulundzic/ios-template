@@ -17,11 +17,11 @@ protocol ExampleRouterDelegate: class {
   func exampleRouterRequestedUnwind()
 }
 
-class ExampleRouter: Router {
-  weak var viewController: UIViewController?
+class ExampleRouter {
+  weak var viewController: ExampleViewController?
   weak var delegate: ExampleRouterDelegate?
   
-  static func createModule(delegate: ExampleRouterDelegate?) -> UIViewController {
+  static func createModule(delegate: ExampleRouterDelegate?) -> ExampleViewController {
     let view = ExampleViewController()
     let interactor = ExampleInteractor()
     let router = ExampleRouter()
@@ -30,7 +30,7 @@ class ExampleRouter: Router {
     let presenter = ExamplePresenter(interface: view, interactor: interactor, router: router)
     view.presenter = presenter
     interactor.presenter = presenter
-    return UINavigationController(rootViewController: view)
+    return view
   }
 }
 
