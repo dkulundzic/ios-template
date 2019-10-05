@@ -1,6 +1,6 @@
 //
 //  DataSourceProtocol.swift
-//  O2O
+//  Template
 //
 //  Created by Domagoj Kulundzic on 17/07/2018.
 //  Copyright © 2018 Martian & Machine. All rights reserved.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol DataSourceProtocol {
+public protocol DataSourceProtocol {
 	associatedtype Section: SectionProtocol
 	var sections: [Section] { get }
 	var isEmpty: Bool { get }
 }
 
-extension DataSourceProtocol {
+public extension DataSourceProtocol {
 	var isEmpty: Bool {
 		guard numberOfSections() > 0 else {
 			return true

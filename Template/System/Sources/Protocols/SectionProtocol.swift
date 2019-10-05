@@ -1,6 +1,6 @@
 //
 //  SectionProtocol.swift
-//  O2O
+//  Template
 //
 //  Created by Domagoj Kulundzic on 17/07/2018.
 //  Copyright © 2018 Martian & Machine. All rights reserved.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-protocol SectionProtocol {
+public protocol SectionProtocol {
 	associatedtype Item
 	var items: [Item] { get }
 	var isCollapsed: Bool { get }
 }
 
-extension SectionProtocol {
+public extension SectionProtocol {
 	var isCollapsed: Bool {
 		return false
 	}
