@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Model
 
 @UIApplicationMain
 class TemplateApp: UIResponder, UIApplicationDelegate {
@@ -16,6 +15,7 @@ class TemplateApp: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     window.rootViewController = ExampleRouter.createModule(delegate: nil)
     window.makeKeyAndVisible()
+    
     return true
   }
   
