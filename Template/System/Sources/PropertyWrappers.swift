@@ -3,7 +3,6 @@
 //  Template
 //
 //  Created by Domagoj Kulundzic on 02/10/2019.
-//  Copyright © 2019 Martian & Machine. All rights reserved.
 //
 
 import Foundation

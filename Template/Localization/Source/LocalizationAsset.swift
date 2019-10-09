@@ -3,7 +3,6 @@
 //  Localization
 //
 //  Created by Domagoj Kulundzic on 05/10/2019.
-//  Copyright © 2019 Martian & Machine. All rights reserved.
 //
 
 import Foundation
