@@ -13,7 +13,8 @@ class ___VARIABLE_productName:identifier___ContentView: UIView {
     super.init(frame: frame)
     setupViews()
   }
-  
+
+  @available(*, unavailable)
   required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
