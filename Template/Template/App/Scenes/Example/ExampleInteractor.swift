@@ -7,20 +7,17 @@
 
 import Foundation
 
-protocol ExampleBusinessLogic: class {
+protocol ExampleBusinessLogic: AnyObject {
   func loadTodos()
 }
 
 class ExampleInteractor {
   weak var presenter: ExampleBusinessPresentingLogic?
-  lazy var todosWorker = ExampleTodosWorker()
 }
 
 // MARK: - ExampleBusinessLogic
 extension ExampleInteractor: ExampleBusinessLogic {
   func loadTodos() {
     print(#function)
-    let todos = todosWorker.loadTodos()
-    presenter?.presentTodos(todos)
   }
 }

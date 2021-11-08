@@ -8,9 +8,9 @@
 
 import UIKit
 
-protocol ___VARIABLE_productName:identifier___RoutingLogic: class { }
+protocol ___VARIABLE_productName:identifier___RoutingLogic: AnyObject { }
 
-protocol ___VARIABLE_productName:identifier___RouterDelegate: class { }
+protocol ___VARIABLE_productName:identifier___RouterDelegate: AnyObject { }
 
 class ___VARIABLE_productName:identifier___Router {
   weak var viewController: ___VARIABLE_productName:identifier___ViewController?

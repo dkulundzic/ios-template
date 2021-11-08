@@ -1,9 +1,9 @@
 //
-//  UIColor-Template.swift
-//  Template
+//  UIColor-System.swift
+//  System
 //
-//  Created by Domagoj Kulundzic on 17/07/2018.
-//  Copyright © 2018 Martian & Machine. All rights reserved.
+//  Created by Domagoj Kulundzic on 08/11/2021.
+//  Copyright © 2021 Codeopolis. All rights reserved.
 //
 
 import UIKit

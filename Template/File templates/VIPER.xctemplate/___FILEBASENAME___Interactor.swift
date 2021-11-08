@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol ___VARIABLE_productName:identifier___BusinessLogic: class { }
+protocol ___VARIABLE_productName:identifier___BusinessLogic: AnyObject { }
 
 class ___VARIABLE_productName:identifier___Interactor { }
 

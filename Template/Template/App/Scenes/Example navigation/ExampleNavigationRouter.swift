@@ -7,11 +7,11 @@
 
 import UIKit
 
-protocol ExampleNavigationRoutingLogic: class {
+protocol ExampleNavigationRoutingLogic: AnyObject {
   func unwindBack()
 }
 
-protocol ExampleNavigationRouterDelegate: class {
+protocol ExampleNavigationRouterDelegate: AnyObject {
   func exampleNavigationRouterUnwindBack()
 }
 

@@ -7,12 +7,12 @@
 
 import UIKit
 
-protocol ExampleRoutingLogic: class {
+protocol ExampleRoutingLogic: AnyObject {
   func navigateToExampleNavigation()
   func unwindBack()
 }
 
-protocol ExampleRouterDelegate: class {
+protocol ExampleRouterDelegate: AnyObject {
   func exampleRouterRequestedUnwind()
 }
 

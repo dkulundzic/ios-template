@@ -23,7 +23,7 @@ enum ___VARIABLE_dataSourceName___Section: SectionProtocol {
   }
 }
 
-class ___VARIABLE_dataSourceName___DataSource: DataSourceProtocol {
+class ___VARIABLE_dataSourceName___: DataSourceProtocol {
   private(set) lazy var sections = [___VARIABLE_dataSourceName___Section]()
   
   init() {
@@ -31,8 +31,6 @@ class ___VARIABLE_dataSourceName___DataSource: DataSourceProtocol {
   }
 }
 
-private extension ___VARIABLE_dataSourceName___DataSource {
-  func buildSections() {
-    sections.removeAll()
-  }
+private extension ___VARIABLE_dataSourceName___ {
+  func buildSections() { }
 }

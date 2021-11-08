@@ -7,20 +7,18 @@
 //
 
 import UIKit
+import <#UI-framework#>
 
-protocol ___VARIABLE_productName:identifier___DisplayLogic: class { }
+protocol ___VARIABLE_productName:identifier___DisplayLogic: AnyObject { }
 
-class ___VARIABLE_productName:identifier___ViewController: UIViewController {
-  var presenter: ___VARIABLE_productName:identifier___ViewPresentingLogic?
-  private lazy var contentView = ___VARIABLE_productName:identifier___ContentView()
+class ___VARIABLE_productName:identifier___ViewController: UIContentViewController<___VARIABLE_productName:identifier___ContentView> {
+  var presenter: ___VARIABLE_productName:identifier___PresentingLogic?
 
-  override func loadView() {
-    view = contentView
-  }
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
+    setupNavigationBar()
+    presenter?.onViewLoaded()
   }
 }
 
@@ -32,7 +30,7 @@ private extension ___VARIABLE_productName:identifier___ViewController {
     setupContentView()
   }
   
-  func setupContentView() {
-    view.addSubview(contentView)
-  }
+  func setupContentView() { }
+
+  func setupNavigationBar() { }
 }
