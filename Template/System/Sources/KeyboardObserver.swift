@@ -3,13 +3,13 @@
 //  Template
 //
 //  Created by Domagoj Kulundzic on 03/10/2018.
-//  Copyright © 2018 Martian & Machine. All rights reserved.
+//  Copyright © 2018 Codeopolis. All rights reserved.
 //
 
 import UIKit
 
 /// Defines methods to respond to keyboard appearance events. All methods have empty default implementations.
-public protocol KeyboardObserverDelegate: class {
+public protocol KeyboardObserverDelegate: AnyObject {
   func keyboardWillShow(keyboardHeight: CGFloat, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve)
   func keyboardWillHide(keyboardHeight: CGFloat, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve)
   func keyboardDidShow(keyboardHeight: CGFloat, animationDuration: TimeInterval, animationCurve: UIView.AnimationCurve)

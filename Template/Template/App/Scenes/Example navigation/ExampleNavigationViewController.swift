@@ -6,25 +6,17 @@
 //
 
 import UIKit
+import TemplateUI
 
-protocol ExampleNavigationDisplayLogic: class { }
+protocol ExampleNavigationDisplayLogic: AnyObject { }
 
-class ExampleNavigationViewController: UIViewController {
-  var presenter: ExampleNavigationViewPresentingLogic?
-  private lazy var contentView = ExampleNavigationContentView.autolayoutView()
-  
-  init() {
-    super.init(nibName: nil, bundle: nil)
-    title = "Example navigation"
-  }
-  
-  required init?(coder aDecoder: NSCoder) {
-    fatalError("init(coder:) has not been implemented")
-  }
+class ExampleNavigationViewController: UIContentViewController<ExampleNavigationContentView> {
+  var presenter: ExampleNavigationPresentingLogic?
   
   override func viewDidLoad() {
     super.viewDidLoad()
     setupView()
+    setupNavigationBar()
     presenter?.viewLoaded()
   }
   
@@ -41,13 +33,9 @@ private extension ExampleNavigationViewController {
     setupContentView()
   }
   
-  func setupContentView() {
-    view.addSubview(contentView)
-    NSLayoutConstraint.activate([
-      contentView.leftAnchor.constraint(equalTo: view.leftAnchor),
-      contentView.topAnchor.constraint(equalTo: view.topAnchor),
-      contentView.rightAnchor.constraint(equalTo: view.rightAnchor),
-      contentView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
-    ])
+  func setupContentView() { }
+
+  func setupNavigationBar() {
+    navigationItem.title = "Example navigation"
   }
 }

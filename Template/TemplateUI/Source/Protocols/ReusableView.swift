@@ -3,7 +3,7 @@
 //  Template
 //
 //  Created by Domagoj Kulundzic on 17/07/2018.
-//  Copyright © 2018 Martian & Machine. All rights reserved.
+//  Copyright © 2018 Codeopolis. All rights reserved.
 //
 
 import UIKit

@@ -1,13 +1,12 @@
 //
-//  UICollectionView-Template.swift
-//  Template
+//  UICollectionView-System.swift
+//  System
 //
-//  Created by Domagoj Kulundzic on 17/07/2018.
-//  Copyright © 2018 Martian & Machine. All rights reserved.
+//  Created by Domagoj Kulundzic on 08/11/2021.
+//  Copyright © 2021 Codeopolis. All rights reserved.
 //
 
 import UIKit
-import Model
 
 public extension UICollectionView {
 	func register<T: UICollectionViewCell>(_: T.Type) {

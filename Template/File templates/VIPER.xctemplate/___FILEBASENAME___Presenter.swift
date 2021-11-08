@@ -8,19 +8,29 @@
 
 import Foundation
 
-protocol ___VARIABLE_productName:identifier___ViewPresentingLogic: class { }
+protocol ___VARIABLE_productName:identifier___PresentingLogic: AnyObject {
+  func onViewLoaded()
+}
 
 class ___VARIABLE_productName:identifier___Presenter {
   var interactor: ___VARIABLE_productName:identifier___BusinessLogic?
   weak private var view: ___VARIABLE_productName:identifier___DisplayLogic?
   private let router: ___VARIABLE_productName:identifier___RoutingLogic
   
-  init(interface: ___VARIABLE_productName:identifier___DisplayLogic, interactor: ___VARIABLE_productName:identifier___BusinessLogic?, router: ___VARIABLE_productName:identifier___RoutingLogic) {
+  init(
+    interface: ___VARIABLE_productName:identifier___DisplayLogic,
+    interactor: ___VARIABLE_productName:identifier___BusinessLogic?,
+    router: ___VARIABLE_productName:identifier___RoutingLogic
+  ) {
     self.view = interface
     self.interactor = interactor
     self.router = router
   }
 }
 
-// MARK: - ___VARIABLE_productName:identifier___ViewPresentingLogic
-extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___ViewPresentingLogic { }
+// MARK: - ___VARIABLE_productName:identifier___PresentingLogic
+extension ___VARIABLE_productName:identifier___Presenter: ___VARIABLE_productName:identifier___PresentingLogic {
+  func onViewLoaded() {
+    print(#function)
+  }
+}

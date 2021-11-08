@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ExampleNavigationBusinessLogic: class { }
+protocol ExampleNavigationBusinessLogic: AnyObject { }
 
 class ExampleNavigationInteractor {
   weak var presenter: ExampleNavigationBusinessPresentingLogic?

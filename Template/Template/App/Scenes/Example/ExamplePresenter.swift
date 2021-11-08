@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol ExampleViewPresentingLogic: class {
+protocol ExamplePresentingLogic: AnyObject {
   func viewLoaded()
   func viewAppeared()
 }
 
-protocol ExampleBusinessPresentingLogic: class {
+protocol ExampleBusinessPresentingLogic: AnyObject {
   func presentTodos(_ todos: [Any])
 }
 
@@ -28,8 +28,8 @@ class ExamplePresenter {
   }
 }
 
-// MARK: - ExampleViewPresentingLogic
-extension ExamplePresenter: ExampleViewPresentingLogic {
+// MARK: - ExamplePresentingLogic
+extension ExamplePresenter: ExamplePresentingLogic {
   func viewLoaded() {
     print(#function)
     interactor?.loadTodos()

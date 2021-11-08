@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol ExampleNavigationViewPresentingLogic: class {
+protocol ExampleNavigationPresentingLogic: AnyObject {
   func viewLoaded()
 }
 
-protocol ExampleNavigationBusinessPresentingLogic: class { }
+protocol ExampleNavigationBusinessPresentingLogic: AnyObject { }
 
 class ExampleNavigationPresenter {
   var interactor: ExampleNavigationBusinessLogic?
@@ -25,8 +25,8 @@ class ExampleNavigationPresenter {
   }
 }
 
-// MARK: - ExampleNavigationViewPresentingLogic
-extension ExampleNavigationPresenter: ExampleNavigationViewPresentingLogic {
+// MARK: - ExampleNavigationPresentingLogic
+extension ExampleNavigationPresenter: ExampleNavigationPresentingLogic {
   func viewLoaded() {
     DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
       self.router.unwindBack()

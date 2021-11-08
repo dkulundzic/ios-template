@@ -10,9 +10,10 @@ import UIKit
 @UIApplicationMain
 class TemplateApp: UIResponder, UIApplicationDelegate {
   let window = UIWindow(frame: UIScreen.main.bounds)
+  private let appRouter = TemplateAppRouter()
   
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-    window.rootViewController = ExampleRouter.createModule(delegate: nil)
+    window.rootViewController = appRouter.initialViewController()
     window.makeKeyAndVisible()
     
     return true
