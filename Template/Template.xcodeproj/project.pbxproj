@@ -78,9 +78,9 @@
 		4883B330273930D800697D7C /* TemplateUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4883B31C273930D700697D7C /* TemplateUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4883B342273930E700697D7C /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B33B273930E700697D7C /* ContentViewController.swift */; };
 		4883B343273930E700697D7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B33C273930E700697D7C /* ViewController.swift */; };
-		4883B344273930E700697D7C /* UICollectionView-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B33F273930E700697D7C /* UICollectionView-UI.swift */; };
-		4883B345273930E700697D7C /* UIColor-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B340273930E700697D7C /* UIColor-UI.swift */; };
-		4883B346273930E700697D7C /* UITableView-UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B341273930E700697D7C /* UITableView-UI.swift */; };
+		4883B344273930E700697D7C /* UICollectionView-TemplateUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B33F273930E700697D7C /* UICollectionView-TemplateUI.swift */; };
+		4883B345273930E700697D7C /* UIColor-TemplateUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B340273930E700697D7C /* UIColor-TemplateUI.swift */; };
+		4883B346273930E700697D7C /* UITableView-TemplateUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B341273930E700697D7C /* UITableView-TemplateUI.swift */; };
 		4883B3472739314000697D7C /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480E55F5229BEEF20031BDF7 /* ReusableView.swift */; };
 		4883B3492739323D00697D7C /* TemplateAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4883B3482739323D00697D7C /* TemplateAppRouter.swift */; };
 		48DBFE522739371500DED060 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48DBFE512739371500DED060 /* Animation.swift */; };
@@ -329,9 +329,9 @@
 		4883B32A273930D800697D7C /* TemplateUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateUITests.swift; sourceTree = "<group>"; };
 		4883B33B273930E700697D7C /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		4883B33C273930E700697D7C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4883B33F273930E700697D7C /* UICollectionView-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView-UI.swift"; sourceTree = "<group>"; };
-		4883B340273930E700697D7C /* UIColor-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-UI.swift"; sourceTree = "<group>"; };
-		4883B341273930E700697D7C /* UITableView-UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView-UI.swift"; sourceTree = "<group>"; };
+		4883B33F273930E700697D7C /* UICollectionView-TemplateUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView-TemplateUI.swift"; sourceTree = "<group>"; };
+		4883B340273930E700697D7C /* UIColor-TemplateUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-TemplateUI.swift"; sourceTree = "<group>"; };
+		4883B341273930E700697D7C /* UITableView-TemplateUI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView-TemplateUI.swift"; sourceTree = "<group>"; };
 		4883B3482739323D00697D7C /* TemplateAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateAppRouter.swift; sourceTree = "<group>"; };
 		48DBFE512739371500DED060 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		48DBFE54273937BF00DED060 /* CompositionalLayoutVendor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositionalLayoutVendor.swift; sourceTree = "<group>"; };
@@ -594,7 +594,6 @@
 			isa = PBXGroup;
 			children = (
 				482201D122982539003319F0 /* UI */,
-				482201D022982534003319F0 /* Extensions */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -724,13 +723,6 @@
 				4822015922982175003319F0 /* TemplateTests.swift */,
 			);
 			path = "Unit tests";
-			sourceTree = "<group>";
-		};
-		482201D022982534003319F0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		482201D122982539003319F0 /* UI */ = {
@@ -873,9 +865,9 @@
 		4883B33E273930E700697D7C /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				4883B33F273930E700697D7C /* UICollectionView-UI.swift */,
-				4883B340273930E700697D7C /* UIColor-UI.swift */,
-				4883B341273930E700697D7C /* UITableView-UI.swift */,
+				4883B33F273930E700697D7C /* UICollectionView-TemplateUI.swift */,
+				4883B340273930E700697D7C /* UIColor-TemplateUI.swift */,
+				4883B341273930E700697D7C /* UITableView-TemplateUI.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -1497,13 +1489,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4883B343273930E700697D7C /* ViewController.swift in Sources */,
-				4883B344273930E700697D7C /* UICollectionView-UI.swift in Sources */,
+				4883B344273930E700697D7C /* UICollectionView-TemplateUI.swift in Sources */,
 				4883B342273930E700697D7C /* ContentViewController.swift in Sources */,
 				4883B3472739314000697D7C /* ReusableView.swift in Sources */,
 				48DBFE57273937BF00DED060 /* ListLayoutVendor.swift in Sources */,
-				4883B345273930E700697D7C /* UIColor-UI.swift in Sources */,
+				4883B345273930E700697D7C /* UIColor-TemplateUI.swift in Sources */,
 				48DBFE522739371500DED060 /* Animation.swift in Sources */,
-				4883B346273930E700697D7C /* UITableView-UI.swift in Sources */,
+				4883B346273930E700697D7C /* UITableView-TemplateUI.swift in Sources */,
 				48DBFE56273937BF00DED060 /* CompositionalLayoutVendor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

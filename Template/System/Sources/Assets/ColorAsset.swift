@@ -14,7 +14,7 @@ public protocol ColorAsset: Asset {
 public extension ColorAsset {
   var color: UIColor {
     guard let color = UIColor(named: name) else {
-      fatalError("Can't find the \(name) image asset.")
+      fatalError("Can't find the \(name) color asset.")
     }
     return color
   }
